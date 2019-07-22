@@ -1,13 +1,50 @@
+import 'dart:async';
+import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 void main() => runApp(MyApp());
 
+
 class MyApp extends StatelessWidget {
+  final response = http.get('https://jsonplaceholder.typicode.com/posts/1');
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
         title: "getting started title",
         home: new Scaffold(
+          drawer: Drawer(
+  // Add a ListView to the drawer. This ensures the user can scroll
+  // through the options in the drawer if there isn't enough vertical
+  // space to fit everything.
+  child: ListView(
+    // Important: Remove any padding from the ListView.
+    padding: EdgeInsets.zero,
+    children: <Widget>[
+      DrawerHeader(
+        child: Text('Drawer Header'),
+        decoration: BoxDecoration(
+          color: Colors.blue,
+        ),
+      ),
+      ListTile(
+        title: Text('Item 1'),
+        onTap: () {
+          // Update the state of the app.
+          // ...
+        },
+      ),
+      ListTile(
+        title: Text('Item 2'),
+        onTap: () {
+          // Update the state of the app.
+          // ...
+        },
+      ),
+    ],
+  ),
+),
           appBar: new AppBar(title: new Center(child: new Text("Bunga Sahib"))),
           body: new HomeWidget(3),
         ));
@@ -41,6 +78,8 @@ class SingleListItem extends StatefulWidget{
 class _SingleListItemState extends State<SingleListItem>{
   bool hide = false;
   @override
+
+
   Widget build(BuildContext context) {
 
   return GestureDetector(

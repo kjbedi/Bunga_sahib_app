@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "657805978821",
+    "firebase_url": "https://bungasahibapp.firebaseio.com",
+    "project_id": "bungasahibapp",
+    "storage_bucket": "bungasahibapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657805978821:android:9c974e58f22aa611",
+        "android_client_info": {
+          "package_name": "com.example.hello"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "657805978821-jmbef70nu8eb1dhbb4meig57h863e0o2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJZozRZptmFLRPpfOgY1mKJvsf-OZlpVo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "657805978821-jmbef70nu8eb1dhbb4meig57h863e0o2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
